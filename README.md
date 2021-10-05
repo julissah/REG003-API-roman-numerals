@@ -5,7 +5,7 @@ CLI - The library allows to convert `Arabic numerals` to `Roman numerals` and vi
 ## Install
 
 ```npm
-npm i roman-numerals-convert
+npm i roman-numerals-api
 ```
 
 ## Usage
@@ -14,9 +14,9 @@ npm i roman-numerals-convert
 roman-numerals
 ```
 
-## Demo
+<!-- ## Demo
 
-![Alt Text](https://user-images.githubusercontent.com/45825143/134442350-70eacd7b-17b2-4226-808a-d44e5174abe3.gif)
+![Alt Text](https://user-images.githubusercontent.com/45825143/134442350-70eacd7b-17b2-4226-808a-d44e5174abe3.gif) -->
 
 ## API - JavaScript
 
@@ -60,38 +60,47 @@ This interface offers two _sub-commands_ (`parse` and `stringify`) plus options 
 
 ### Examples
 
-Executing directly through the path relative to the script `bin/global.js`, using npm.
-
-![](./img/bin.svg)
-
-
 You can also execute directly with the `romans-numerals` command. The interface allows you to perform a quick search using the arrow keys or type to search for the desired option and then the _tab_ key to _auto-complete_ the search. 
 
 #### Comands
 
-* `parse`
+* parse
 
-When selecting the _parse_ option you must enter the Roman numeral you wish to convert. 
+  ```sh
+  $ npx roman-numerals parse MMXX
+  2020
+  ```
 
-![](./img/parse.svg)
+* stringify
 
-* `stringify`
-
-When selecting the _stringify_ option you must enter the arabic number you want to convert.
-
-![](./img/stringify.svg)
+  ```sh
+  $ npx roman-numerals stringify 2020
+  MMXX
+  ```
 
 #### Options
-* `--version`
+* --version
 
-![](./img/version.svg)
+  ```text
+  $ npx roman-numerals -v
+  1.0.0
+  ```
 
-* `--help`
+* --help
 
-![](./img/help.svg)
+  ```text
+  $ npx roman-numerals -h
+  Usage: roman-numerals [opttions] <command> [<input>]
+  Commands:
+    parse <input>      Parse a roman numeral string into an   integer.
+    stringify <input>  Takes an integer and converts it to a  roman numeral.
+  Options:
+    --h,--help     Show this help.
+    --v,--version  Show version number.
+  ```
 
 ## Install - NPM
 
-You can download the package [NPM](https://opensource.org/licenses/MIT).
+You can download the package [NPM](https://www.npmjs.com/package/roman-numerals-api).
 ## License
-roman-numerals is released under the [MIT License](https://www.npmjs.com/package/roman-numerals-convert).
+roman-numerals is released under the [MIT License](https://opensource.org/licenses/MIT).
