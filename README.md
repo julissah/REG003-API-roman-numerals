@@ -60,7 +60,7 @@ This interface offers two _sub-commands_ (`parse` and `stringify`) plus options 
 
 ### Examples
 
-You can also execute directly with the `romans-numerals` command. The interface allows you to perform a quick search using the arrow keys or type to search for the desired option and then the _tab_ key to _auto-complete_ the search. 
+You can also execute directly with the `romans-numerals` command.
 
 #### Comands
 
