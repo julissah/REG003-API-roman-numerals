@@ -83,7 +83,7 @@ You can also execute directly with the `romans-numerals` command.
 
   ```text
   $ npx roman-numerals -v
-  1.0.0
+  1.0.5
   ```
 
 * --help
